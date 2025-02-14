@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
 
@@ -10,6 +9,7 @@
     <h1>Rango says...</h1>
     here is the about page. <br />
     <strong>This tutorial has been put together by Jiayue Wang.</strong><br />
+    Visits: {{ visits }}<br />
     <img src="{% static 'images/rango.jpg' %}"
         alt="Picture of Rango" />
     <img src="{{ MEDIA_URL }}cat.jpg"
